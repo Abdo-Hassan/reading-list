@@ -22,6 +22,15 @@ body {
   background-color: #6d3d6d;
 }
 
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 10px 13px;
+  }
+  .navbar h1 {
+    font-size: 25px;
+  }
+}
+
 .navbar h1 {
   margin: 10px 0;
 }
@@ -80,8 +89,20 @@ input[type='text'] {
 
 input[type='submit'] {
   margin: 10px auto;
-  background-color: #eee;
+  background-color: #4c2a4c;
   border: 0;
-  padding: 6px 20px;
+  padding: 11px 26px;
   display: block;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+input[type='submit']:hover {
+  background-color: #fff;
+  color: #4c2a4c;
+  border: 1px solid #fff;
 }
